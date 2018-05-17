@@ -1,0 +1,464 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font: 1em "Open Sans", sans-serif;
+  line-height: 1.3755em;
+}
+
+.container {
+  max-width: 40em;
+  margin: 0;
+  display: grid;
+  background-color: #ffffff;
+}
+
+h4{
+  text-transform: uppercase;
+  color: #333333;
+}
+
+p {
+  color: #666666;
+}
+
+img {
+  max-width: 100%;
+}
+
+/** Header **/
+
+header {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.header_logo {
+  width: 70%;
+  padding: 1% 0 4% 2%;
+}
+
+/** Main **/
+
+.intro {
+  max-width: 21em;
+  margin: auto;
+  padding: 2%;
+}
+
+#news {
+  max-width: 25.875em;
+  background-color: #F2F2F2;
+}
+
+.news_button {
+  max-width: 21em;
+  margin: auto;
+  padding: 2% 0;
+}
+
+input[type="button"] {
+  background: /*linear-gradient(to bottom, #ffffff 0%,#ffffff 25%,#cccccc 65%,#cccccc 100%);*/ linear-gradient(to bottom, #ffffff 0%,#ffffff 23%,#cccccc 65%,#cccccc 100%,#cccccc 100%);
+  margin-right: 1%;
+  width: 30px;
+  height: 30px;
+}
+
+input[type="button"].selected {
+  background: linear-gradient(to bottom, #cccccc 0%,#cccccc 35%,#ffffff 65%,#ffffff 100%)
+}
+
+.news_container {
+  display: block;
+  max-width: 21em;
+  margin: auto;
+}
+
+.title {
+  width: auto;
+  padding: 3% 0 3% 0%;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.content {
+  width: auto;
+  columns: auto;
+  padding: 0 0 3% 0%;
+}
+
+#newsletter {
+  display: inline;
+  max-width: 21em;
+  margin: auto;
+}
+
+.newsletter_title {
+  font-size: 1.5em;
+  padding: 0 0 5% 2%;
+  margin: 0;
+}
+
+#newsletter_sub {
+  flex-grow: unset;
+  padding: 0 0 3% 2%;
+}
+
+#email_address {
+  float: left;
+  width: 75%;
+}
+
+.submit_mail {
+  position: absolute;
+}
+
+/** Footer **/
+
+footer {
+  margin-top: 3%;
+  background-color: #333333;
+  height: 100%;
+}
+
+.copyright {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 1% 0 1% 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 520px) {
+
+  /** Main **/
+
+  .intro {
+    max-width: 34em;
+    margin: auto;
+    padding: 0;
+  }
+
+  #news {
+    max-width: 37.5em;
+  }
+
+  .news_button {
+    max-width: 34em;
+    margin: auto;
+    padding: 2% 0 2% 0;
+  }
+
+  .news_container {
+    display: block;
+    max-width: 34em;
+    margin: auto;
+  }
+
+  #newsletter {
+    display: block;
+    max-width: 34em;
+    margin: auto;
+  }
+
+  .newsletter_title {
+    padding: 0 0 3% 0;
+  }
+
+  #newsletter_sub {
+    padding: 0 0 3% 0;
+  }
+
+}
+
+@media screen and (min-width: 640px) {
+
+  .container {
+    max-width: 47.937em;
+  }
+
+  /** Header **/
+
+  .header_logo {
+    width: 50%;
+    padding: 2% 0 2% 2%;
+  }
+
+  /** Main **/
+
+  .intro {
+    max-width: 44.812em;
+    margin: auto;
+   }
+
+   #news {
+     max-width: 47.937em;
+   }
+
+  .news_button {
+    max-width: 44.812em;
+    margin: auto;
+    padding: 2%;
+  }
+
+  input[type="button"] {
+    margin-right: 1%;
+  }
+
+  .news_container {
+    display: block;
+    max-width: 44.812em;
+    margin: auto;
+  }
+
+  .title {
+    width: auto;
+    padding: 2%;
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  .content {
+    width: auto;
+    columns: auto;
+    padding: 2%;
+  }
+
+  #newsletter {
+    max-width: 44.812em;
+    display: block;
+  }
+
+  .newsletter_title {
+    padding: 2%;
+    margin: 0;
+  }
+
+  #newsletter_sub {
+    padding: 2%;
+  }
+
+  #email_address {
+    float: left;
+    width: 75%;
+  }
+
+  .submit_mail {
+    position: absolute;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+
+  .container {
+    max-width: 61.25em;
+  }
+
+  /** Header **/
+
+  .header_logo {
+    width: 35%;
+    padding: 2% 0 2% 2%;
+  }
+
+  /** Main **/
+
+  .intro {
+    max-width: 45em;
+    margin: auto;
+  }
+
+  #news {
+    max-width: 61.25em;
+    margin: auto;
+  }
+
+  .news_button {
+    max-width: 45em;
+    margin: auto;
+    padding: 2%;
+  }
+
+  .news_container {
+    display: block;
+    max-width: 45em;
+    margin: auto;
+  }
+
+  .title {
+    width: auto;
+    padding: 1% 0 1% 0;
+    margin: 0;
+  }
+
+  .content {
+    width: auto;
+    columns: auto;
+    padding: 0 0 3% 0%;
+  }
+
+  #newsletter {
+    max-width: 45em;
+    margin: auto;
+  }
+
+  #email_address {
+    width: 85%;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .container {
+    max-width: 64em;
+  }
+
+  /** Header **/
+
+  header {
+    display: inline;
+  }
+
+  .header_logo {
+    width: 25%;
+    padding: 1% 0 1% 2%;
+  }
+
+  /** Main **/
+
+  .intro {
+    max-width: 61.25em;
+    margin: auto;
+    padding: 0;
+  }
+
+  #news {
+    max-width: 61.25em;
+    margin: auto;
+  }
+
+  .news_button {
+    max-width: 61.25em;
+    margin: auto;
+    padding: 1%;
+  }
+
+  input[type="button"] {
+    width: auto;
+    height: auto;
+    margin-right: 0.5%;
+  }
+
+  .news_container {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 61.25em;
+    margin: auto;
+  }
+
+  .title {
+    width: 30%;
+    columns: 1;
+    padding: 1% 0 0 1%;
+    margin-right: 3%;
+  }
+
+  .content {
+    width: 65%;
+    columns: 2;
+    padding: 1% 0 1% 0;
+    margin: 0;
+  }
+
+  #newsletter {
+    max-width: 61.25em;
+    margin: 2% auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .newsletter_title {
+    margin: 0;
+    flex-grow: 1;
+    padding: 1% 0 1% 0;
+  }
+
+  #newsletter_sub {
+    flex-grow: 2;
+    padding: 1% 2% 0 0;
+  }
+
+  #email_address {
+    float: left;
+    width: 90%;
+  }
+
+  .submit_mail {
+    position: absolute;
+  }
+
+  /** Footer **/
+
+  footer {
+    margin: 0;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+  body {
+    background-color: #666666;
+  }
+
+  .container {
+    max-width: 75em;
+    margin: auto;
+  }
+
+  /** Main **/
+
+  .intro {
+    max-width: 71.875em;
+    margin: auto;
+  }
+
+  #news {
+    max-width: 71.875em;
+    margin: auto;
+  }
+
+  .news_button {
+    max-width: 71.875em;
+    margin: auto;
+    padding: 1%;
+  }
+
+  .news_container {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 71.875em;
+    margin: auto;
+  }
+
+  .title {
+    width: 30%;
+    columns: 1;
+    padding-left: 1%;
+    font-size: 1.5em;
+    margin-right: 3%;
+  }
+
+  .content {
+    width: 65%;
+    columns: 2;
+  }
+
+  #newsletter {
+  max-width: 71.875em;
+  }
+}
